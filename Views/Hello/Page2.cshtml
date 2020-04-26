@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Page2";
+}
+
+<h2>Page2</h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Page2</title>
+</head>
+<body>
+    <div>
+        @{
+            int a = 10, b = 20, c;
+            c = a + b;
+        }
+
+        @c
+
+        @* this is razor comments *@
+
+        <!-- this is html comments -->
+
+        @for (int i = 1; i <= 5; i++)
+        {
+            <h1>hai</h1>
+        }
+
+        @{
+            List<string> MyCities = new List<string>() { "Hyderabad", "Chennai", "Banglore", "Lucknow" };
+        }
+
+        <ul>
+            @foreach (var item in MyCities)
+            {
+                <li>@item</li>
+            }
+        </ul>
+
+        @{ int n = 100; }
+
+        <br />
+        @n+1
+        <br />
+        @(n + 1)
+        <hr />
+
+        @for (int i = 1; i <= 10; i++)
+        {
+            @:harsha
+        }
+
+        @{
+            string s1 = "harsha";
+            string s2 = "vardhan";
+
+        }
+
+        @(s1+s2)
+    </div>
+</body>
+</html>
+
+

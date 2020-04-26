@@ -1,0 +1,41 @@
+﻿@model MVCApplication1.Models.CustomerAndSupplierViewModel
+@{
+    ViewBag.Title = "Page5";
+}
+
+<h2>Page5</h2>
+<form>
+    <fieldset>
+        <legend>Customer Details</legend>
+
+        Customer ID:
+        <input type="text" value="@Model.cust.CustomerID" />
+        <br />
+
+        Customer Name:
+        <input type="text" value="@Model.cust.CustomerName" />
+        <br />
+
+        EMail:
+        <input type="text" value="@Model.cust.Email" />
+        <br />
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Supplier Details</legend>
+        Supplier ID:
+        <input type="text" value="@Model.supp.SupplierID" />
+        <br />
+
+        Supplier Name:
+        <input type="text" value="@Model.supp.SupplierName" />
+        <br />
+
+        Order ID:
+        <input type="text" value="@Model.supp.OrderID" />
+        <br />
+    </fieldset>
+</form>
+
